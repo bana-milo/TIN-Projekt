@@ -125,7 +125,7 @@ header {
     color: #242b1c;
 }
 
-#button {
+#add-offer-button {
     padding: 10px 20px;
     background-color: #659968;
     border: none;
@@ -135,7 +135,7 @@ header {
     border-radius: 4px;
 }
 
-#button:hover {
+#add-offer-button:hover {
     background-color: #5a8b5e;
 }
 
