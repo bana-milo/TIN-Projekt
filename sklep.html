@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chomikuj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html" title="Strona główna">
+                    <img src="img/home.svg" alt="Home" id="home">
+                    <h1>Sklep z chomikami</h1>
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="add-offer"> 
+            <button id="button">Sprzedaj swojego chomika!</button>
+            <form id="form">
+                <input type="text" id="title" placeholder="Imię chomika" required>
+                <input type="text" id="price" placeholder="Cena [##,## zł]" required>
+                <textarea id="content" placeholder="Opis chomika" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Zapisz ogłoszenie</button>
+            </form>
+        </section>
+        <section id="offers"></section>
+    </main>
+
+    <script src="oferty.js"></script>
+</body>
+</html>

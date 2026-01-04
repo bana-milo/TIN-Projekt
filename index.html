@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep z chomikami</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #adbca4;
+            text-align: center;
+        }
+
+        .welcome-container {
+            background-color: rgb(196, 221, 180);
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .welcome-container h1 {
+            color: #659968;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .welcome-container p {
+            font-size: 20px;
+            color: #242b1c;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            min-width: 180px;
+            transition: all 0.3s;
+        }
+
+        .btn-yes {
+            background-color: #d9534f; /* czerwony */
+            color: white;
+        }
+
+        .btn-yes:hover {
+            background-color: #c9302c;
+        }
+
+        .btn-no {
+            background-color: #659968; /* zielony */
+            color: white;
+        }
+
+        .btn-no:hover {
+            background-color: #5a8b5e;
+        }
+
+        .block-message {
+            display: none;
+            background-color: #f2dede;
+            color: #a94442;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #ebccd1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1>Witaj w Sklepie z chomikami!</h1>
+        <p>Aby kontynuować, odpowiedz na ważne pytanie:</p>
+        <p><strong>Czy jesteś właścicielem węża/węży?</strong></p>
+
+        <div class="buttons">
+            <button class="btn btn-yes" id="yes-btn">Tak</button>
+            <button class="btn btn-no" id="no-btn">Nie</button>
+        </div>
+
+        <div class="block-message" id="block-message">
+            Nie sprzedajemy chomików na pożarcie! 🛑<br><br>
+            Chomiki to przyjaciele, nie pokarm.
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById("yes-btn");
+        const noBtn = document.getElementById("no-btn");
+        const blockMessage = document.getElementById("block-message");
+        const welcomeContainer = document.querySelector(".welcome-container");
+
+        yesBtn.addEventListener("click", function() {
+            blockMessage.style.display = "block";
+            yesBtn.disabled = true;
+            noBtn.disabled = true;
+        });
+
+        noBtn.addEventListener("click", function() {
+            window.location.href = "sklep.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kup chomika - formularz zakupu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 40px 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .form-container h1 {
+            color: #659968;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #374723;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .card-details {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+        }
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .submit-btn {
+            background-color: #659968;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #5a8b5e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html" title="Powrót do sklepu">
+                    <img src="img/home.svg" alt="Home" id="home">
+                    <h1>Sklep z chomikami</h1>
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Finalizacja zakupu chomika</h1>
+            
+            <div class="warning">
+                ⚠️ To tylko strona demonstracyjna! Nie podawaj prawdziwych danych karty płatniczej. 
+                Żadne dane nie są zapisywane ani przetwarzane.
+            </div>
+
+            <form id="purchase-form">
+                <div class="form-group">
+                    <label>Imię i nazwisko</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Numer telefonu</label>
+                    <input type="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Adres dostawy</label>
+                    <input type="text" placeholder="Ulica i numer domu/mieszkania" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Kod pocztowy" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Miasto" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Metoda płatności</label>
+                    <select required>
+                        <option value="">Wybierz...</option>
+                        <option>Karta płatnicza</option>
+                        <option>Przelew tradycyjny</option>
+                        <option>Za pobraniem</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Dane karty (tylko demo!)</label>
+                    <div class="card-details">
+                        <input type="text" placeholder="Numer karty (np. 1234 5678 9012 3456)" maxlength="19">
+                        <input type="text" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input type="text" placeholder="CVV (np. 123)" maxlength="4" style="width: 100px;">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Złóż zamówienie</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("purchase-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Dziękujemy za złożenie zamówienia! 🐹\n(To tylko demo – żadne dane nie zostały zapisane ani przetworzone.)");
+            window.location.href = "sklep.html";
+        });
+    </script>
+</body>
+</html>

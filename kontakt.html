@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chomikuj - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main .container {
+            max-width: none;
+            margin: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        main .info {
+            background-color: rgb(196, 221, 180);
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        main .info h1 {
+            color: #659968;
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #659968;
+            padding-bottom: 10px;
+        }
+
+        main .info strong {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #242b1c;
+            display: block;
+        }
+
+        .google-maps-contact {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            main .container {
+                flex-direction: column;
+            }
+
+            .google-maps-contact {
+                height: 350px;
+                max-width: 100%;
+            }
+
+            main .info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html" title="Strona główna">
+                    <img src="img/home.svg" alt="Home" id="home">
+                    <h1>Sklep z chomikami</h1>
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="info">
+                <h1>Biuro Obsługi Klienta</h1>
+                <strong>
+                    tel: +7 4112 12-34-56<br>
+                    e-mail: kontakt@homjak.su<br>
+                    godziny pracy: pn.- pt. 15:00 - 01:00, sb.- nd. 17:00 - 01:00
+                </strong>
+            </div>
+
+            <div class="info">
+                <h1>Dane kontaktowe</h1>
+                <strong>
+                    Chomikuj<br>
+                    4/9 Obi-Wana Kenobiego<br>
+                    87-162 Grabowiec, Polska<br>
+                    NIP: 543-999-69-67
+                </strong>
+            </div>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1030.3634188181818!2d18.71987762857338!3d52.964358398127885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471cca1352a9644f%3A0xd2f6dd8101cebb4e!2sObi-Wana%20Kenobiego%204%2C%2087-162%20Grabowiec!5e1!3m2!1spl!2spl!4v1767455723688!5m2!1spl!2spl"
+                class="google-maps-contact"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </main>
+
+</body>
+
+</html>
