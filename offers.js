@@ -3,31 +3,31 @@ const offers = [
         title: "Adaś",
         price: "30,5 zł",
         content: "Przemiły chomik",
-        image: "https://picsum.photos/seed/adas/400/300.jpg"
+        image: "https://www.rvc.ac.uk/Media/Default/Press%20Release/gibby_and_blue_flowers_1_-_Lisa_Haycock-fixed.jpg"
     },
     {
         title: "Czażysty", 
         price: "32,5 zł",
         content: "Pełen miłości i włosów",
-        image: "https://picsum.photos/seed/czazysty/400/300.jpg"
+        image: "https://supertails.com/cdn/shop/articles/360_f_681163919_71bp2aiyziip3l4j5mbphdxtipdtm2zh_e2c1dbbd-e3b0-4c7d-bc09-1ebff39513ef.jpg?v=1747293323"
     },
     {
         title: "Belzefer Korneliusz VII",
         price: "4431,0 zł",
         content: "Pochodzący z szlacheckiego rodu chomików Roborowskiego",
-        image: "https://picsum.photos/seed/belzefer/400/300.jpg"
+        image: "https://blog.omlet.us/wp-content/uploads/sites/6/2023/04/Hamster-laying-down-on-the-counter-scaled.jpg"
     },
     {
         title: "Patrycja",
         price: "22,5 zł",
         content: "Kochana pchełka miłości",
-        image: "https://picsum.photos/seed/patrycja/400/300.jpg"
+        image: "https://pet-health-content-media.chewy.com/wp-content/uploads/2025/10/13224248/Do_Hamsters_Like_to_Be_Picked_Up.jpg"
     },
     {
         title: "Vin Disel",
         price: "35,5 zł",
         content: "Ciężko znaleźć chomika bardziej pałnego zamiłowania do biegania w kole.",
-        image: "https://picsum.photos/seed/vindisel/400/300.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hamster.jpg/1280px-Hamster.jpg"
     }
 ];
 
